@@ -18,7 +18,7 @@ non-standard core utilities.
 
   2. Clone the repository:
 
-        git clone --recursive https://github.com/arturhoo/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+        git clone --recursive -b personal https://github.com/arturhoo/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 
   3. Create a new Zsh configuration by copying the Zsh configuration files
      provided:
