@@ -12,4 +12,32 @@ fi
 
 # Customize to your needs...
 
+#
+# aliases
+#
+
 alias be='bundle exec'
+
+#
+# rbenv
+#
+
+export RBENV_ROOT="${HOME}/.rbenv"
+
+if [ -d "${RBENV_ROOT}" ]; then
+  export PATH="${RBENV_ROOT}/bin:${PATH}"
+  eval "$(rbenv init -)"
+fi
+
+#
+# pyenv
+#
+
+export PYENV_ROOT=/usr/local/opt/pyenv
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+
+#
+# z
+#
+
+. `brew --prefix`/etc/profile.d/z.sh
