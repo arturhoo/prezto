@@ -57,6 +57,7 @@ export PATH=$PATH:$EC2_HOME/bin
 #
 
 source $(brew --prefix nvm)/nvm.sh
+export NVM_DIR=~/.nvm
 
 
 #
