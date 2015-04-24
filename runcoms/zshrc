@@ -22,12 +22,7 @@ alias be='bundle exec'
 # rbenv
 #
 
-export RBENV_ROOT="${HOME}/.rbenv"
-
-if [ -d "${RBENV_ROOT}" ]; then
-  export PATH="${RBENV_ROOT}/bin:${PATH}"
-  eval "$(rbenv init -)"
-fi
+# rbenv is now part of the ruby module
 
 #
 # pyenv
