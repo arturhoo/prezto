@@ -19,12 +19,6 @@ fi
 alias be='bundle exec'
 
 #
-# rbenv
-#
-
-# rbenv is now part of the ruby module
-
-#
 # pyenv
 #
 
@@ -36,18 +30,6 @@ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 #
 
 . `brew --prefix`/etc/profile.d/z.sh
-
-#
-# ec2 tools
-#
-
-export JAVA_HOME="$(/usr/libexec/java_home)"
-export EC2_HOME=$HOME/ec2-api-tools
-export AWS_ACCESS_KEY=$(<~/.aws/access_key)
-export AWS_SECRET_KEY=$(<~/.aws/secret_key)
-export AWS_ACCESS_KEY_ID=$(<~/.aws/access_key)
-export AWS_SECRET_ACCESS_KEY=$(<~/.aws/secret_key)
-export PATH=$PATH:$EC2_HOME/bin
 
 #
 # nvm
@@ -72,3 +54,9 @@ BASE16_SHELL="$HOME/.config/base16-shell/base16-$BASE16_SCHEME.dark.sh"
 
 export PATH="/usr/local/heroku/bin:$PATH"
 export LC_ALL=en_US.UTF-8
+
+#
+# travis
+#
+
+[ -f /Users/artur/.travis/travis.sh ] && source /Users/artur/.travis/travis.sh
