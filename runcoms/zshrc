@@ -22,8 +22,9 @@ alias be='bundle exec'
 # pyenv
 #
 
-export PYENV_ROOT=/usr/local/opt/pyenv
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+export PATH="/Users/artur/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 #
 # z
